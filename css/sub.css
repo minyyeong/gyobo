@@ -1,0 +1,625 @@
+@charset "utf-8";  
+  * {margin:0; padding:0; box-sizing:border-box;}
+  ul, ol, li {list-style:none; margin:0; padding:0;}
+  header {border-bottom:1px solid #eaeaea;;}
+
+  section {width:100%; height:auto;}
+
+  /* main */
+  #main {width:1200px; height:880px; margin:0 auto; padding-top:20px; }
+  .category {width:1200px; height:27px;}
+  .category > ul {width:390px; height:27px; float:left; display:flex; justify-content:space-between; align-items:center;}
+  .category > ul > li > img {width:14px; height:13px;}
+  .category > ul > li {font-size:3px; color:#cecece; font-family: 'Noto Sans KR', sans-serif; font-weight:100;}
+  .category > ul > li > a {font-size:13px; color:#767676; font-family: 'Noto Sans KR', sans-serif; font-weight:500;}
+  .category > ul > li > a::after {content:""; background-image:url(../img/sub/v_icon.png); width:16px; height:16px; display: inline-block; margin:0 0 -3px 5px; background-size: 16px 16px;}
+
+
+/* book */
+  .book {width:1200px; height:700px; margin:50px auto;}
+  .book > .left {float:left; width:500px; height:650px; }
+  .book > .left > .img_box {width:430px; height:590px; box-shadow:9px 7px 8px rgba(0, 0, 0, 0.2); margin:10px 10px;}
+  .book > .left > .img_box > img {width:100%; height:100%;}
+
+  .look {width:100px; height:60px; margin:40px 0 0 180px; display:flex; flex-direction:column; justify-content:space-between; align-items:center;}
+  .look > h1 {font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; letter-spacing:3px;}
+  .look > h1 > b {color:#000; font-weight:500;}
+  .look > h2 {font-size:12px; background-color:#fff; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400; border:1px solid #ccc; width:83px; height:30px; display:flex; justify-content:center; align-items:center; border-radius:20px;}
+  .look > h2 > img {width:12px; height:12px; margin-right:2px;}
+  .look > h2:hover {background-color:#f5f5f5; cursor: pointer;}
+
+
+  /* infor */
+  .book > .infor {width:680px; height:660px;  float:right;}
+  .infor > h1 {font-size:25px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700; margin-top:15px;}
+  .infor > h1 > b {font-size:35px; font-family:'Nanum Myeongjo', serif; font-weight:800; margin-right:5px;}
+  .infor > h2 {font-size:15px; color:#999; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:20px;}
+
+  .trophy {width:680px; height:75px; margin-top:35px; background-color:#fff; border-bottom:1px solid #eee;}
+  .trophy > img {width:18px; height:18px; float: left; margin-right:10px;}
+  .trophy > h3 {font-size:13px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .trophy > h3:hover {cursor: pointer; text-decoration:underline;}
+  .trophy > h3 > b {font-weight:600;}
+  .trophy > .trophy_1 {width:600px; height:48px; margin-top:4px; display:flex; align-items:center;}
+
+  .trophy_1 > .klo {width:210px; height:48px; float: left; display:flex; justify-content:space-between; align-items:center;}
+  .trophy_1 > .klo > h1 {font-size:18px; color:#409f1a; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .trophy_1 > .klo > .oooo {width:90px; height:18px; margin-top:2px;}
+  .trophy_1 > .klo > .oooo > img {width:18px; height:18px;}
+  .trophy_1 > .klo > h2 {font-size:13px; color:#444; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .trophy_1 > .klo > h2:hover {text-decoration:underline; cursor: pointer;}
+
+  .trophy_1 > h4 {font-size:10px; color:#ccc; font-family:'Noto Sans KR', sans-serif; font-weight:100; float: left; margin:0 20px;}
+
+  .trophy_1 > .klo_2 {width:185px; height:48px; float: left; display:flex; align-items:center; justify-content:space-between;} 
+  .trophy_1 > .klo_2 > img {width:18px; height:18px;}
+  .trophy_1 > .klo_2 > h1 {font-size:18px; color:#474c98; font-family:'Noto Sans KR', sans-serif; font-weight:700; margin-left:-2px;}
+  .trophy_1 > .klo_2 > h2 {font-size:13px; color:#444; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .trophy_1 > .klo_2 > h2:hover {text-decoration:underline; cursor: pointer;}
+
+  /* #infor_b_l */
+  #infor_b_l {width:350px; height:420px; float:left;}
+  .price {width:350px; height:90px; margin-top:20px; border-bottom:1px solid #eee;}
+  .price > .btn_b {width:680px; height:40px;}
+  .btn_b > .btn {width:auto; height:18px; padding:0 5px; padding-bottom:2px; font-size:12px; color:#888; background: #fff; border:1px solid #ccc; font-family:'Noto Sans KR', sans-serif; font-weight:400; border-radius:4px; margin-left:-2px;}
+
+  .price > h1 {font-size:24px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400; display:flex; align-items:flex-end;}
+  .price > h1 > b {font-weight:600;}
+  .price > h1::before {content:"10%"; font-size:24px; color:#4dac27; font-family:'Noto Sans KR', sans-serif; font-weight:600; margin-right:20px;}
+  .price > h1::after {content:"17,800원"; font-size:14px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:300; margin-left:8px; text-decoration: line-through;}
+
+  .benefit {width:350px; height:70px; background-color:#fff; border-bottom:1px solid #eee; display:flex; justify-content:space-between; align-items:center;}
+  .benefit > h1 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:600;}
+  .benefit > h2 {font-size:15px; color:#4dac27; font-family:'Noto Sans KR', sans-serif; font-weight:600;}
+  .benefit > h2::after {content:""; background-image:url("../img/sub/v_icon.png"); background-size: 22px 22px; width:22px; height:22px; margin:-5px 0 -5px 8px; display: inline-block;}
+
+  .deliver {width:350px; height:105px; background-color:#fff; border-bottom:1px solid #eee;}
+  .deliver > .dv {width:350px; height:30px; display:flex; justify-content:space-between; background-color:#fff;  margin-top:20px;}
+  .dv > h1 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:600;}
+  .dv > h2 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .dv > h2::after {content:""; background-image:url("../img/sub/f_icon.png"); background-size:16px 16px; width:16px; height:16px; margin:0 0 -3px 8px; display: inline-block;}
+  .deliver > h3 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:600; float:right;}
+  .deliver > h3 > b {color:#474c98;}
+  .deliver > h3::after {content:""; background-image:url("../img/sub/ff_icon.png"); background-size:16px 16px; width:16px; height:16px; margin:0 0 -3px 8px; display: inline-block;}
+
+  .deliver > .a {width:350px; height:30px; float:right; margin-top:10px;}
+  .deliver > .a > h4 {font-size:14px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; float:right; margin-top:10px;}
+  .deliver > .a > h4 > span {font-size:12px; background: #fff; height:22px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; padding:3px 5px 1px; border-radius:4px; border:1px solid #ccc; float:right; margin:-4px 0 0 8px;}
+  .deliver > .a > h4 > span:hover {cursor: pointer; background-color:#f5f5f5;}
+
+  .aram {width:350px; height:50px; background-color:#fff; margin-top:10px;}
+  .aram > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; float:left; margin-top:5px; line-height:20px;}
+  .aram > span {height:30px; float:right; color:#474c98; padding:5px 10px; border-radius:4px; font-size: 12px; border:1px solid #5055b1; background-color:#fff; margin-top:10px; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .aram > span:hover {cursor: pointer; background-color:#f5f5f5;}
+  .aram > span::before {content:""; background-image:url("../img/sub/alarm_icon.png"); background-size: 12px 18px; width:12px; height:18px; display: inline-block; margin-right:3px; margin-bottom:-5px;}
+
+  .shop {width:350px; height:38px; background-color:#fff; border:1px solid #ccc; border-radius: 6px; display:flex; justify-content:center; align-items:center; margin-top:8px; padding-bottom:4px;}
+  .shop > h1 {font-size:13px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .shop > h1::before {content:""; background-image:url("../img/sub/locate_icon.png"); background-size: 13px 19px; width:13px; height:19px; display: inline-block; margin-right:5px; margin-bottom:-4px;}
+  .shop:hover {cursor: pointer; background-color:#f5f5f5;}
+
+  /* #infor_b_r */
+  #infor_b_r {width:300px; height:350px; float:right; margin-top:82px; border-radius:10px; display:flex; flex-direction:column; align-items:center;}
+
+  .ga {width:260px; height:90px; margin-top:9px; display:flex; align-items:center; border-bottom:1px solid #eee;}
+  .ga > ul > li {font-size:13px; color:#777; font-family:'Noto Sans KR', sans-serif; font-weight:300; line-height:20px;}
+
+  .volume {width:260px; height:50px; display:flex; align-items:center; margin-top:5px;}
+  .volume > h1 {font-size:13px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-left:10px;}
+  .vol_box {width:90px; height:30px; margin-left:30px; background-color:#fff; border:1px solid rgb(230, 230, 230); border-radius:5px; display:flex; justify-content:space-around; align-items:center;}
+  .vol_box > p {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .vol_box > p:hover {cursor: pointer;}
+
+  .gift {width:250px; height:50px; display:flex; align-items:center; justify-content:space-between; margin-top:5px;}
+  .gift > .heart {width:45px; height:45px; background-color:#fff; border-radius:7px; border:1px solid #d3d3d3; display:flex; justify-content:center; align-items:center;}
+  .gift > .heart:hover {border:1px solid #000; cursor: pointer;}
+  .gift > .heart > a > img {width:20px; height:20px;}
+
+  .gift > .gift_1 {width:195px; height:45px; background-color:#fff; border-radius:7px; border:1px solid #d3d3d3; display:flex; justify-content:center; align-items:center;}
+  .gift > .gift_1:hover {border:1px solid #000; cursor: pointer;}
+  .gift > .gift_1 > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-bottom:8px;}
+  .gift > .gift_1 > h1::before {content:""; background-image:url("../img/sub/gift_icon.png"); background-size:18px 24px; width:18px; height:24px; display: inline-block; margin:0 5px -5px 0;}
+
+  .basket {width:250px; height:49px; background-color:#fff; border:1px solid #5055b1; margin-top:10px; border-radius:7px; display:flex; align-items:center; justify-content:center;}
+  .basket:hover {background-color:#f1f1ff; cursor: pointer;}
+  .basket > h1 {font-size:15px; color:#5055b1; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .buy {width:250px; height:51px; background-color:#5055b1; margin-top:9px; border-radius:7px; display:flex; align-items:center; justify-content:center;}
+  .buy:hover {background-color:#2b2e64; cursor: pointer;}
+  .buy > h1 {font-size:15px; color:#fff; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+
+  /* sub_nav */
+  #sub_nav {width:100%; height:72px; border-bottom:1px solid #ccc; display:flex; align-items:center;}
+  #sub_nav > ul {width:1200px; height:25px; margin:0 auto; display:flex; align-items:center;}
+  #sub_nav > ul > li {padding-right:60px;}
+  #sub_nav > ul > li > a {font-size:16px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  #sub_nav > ul > li > a:hover {cursor: pointer;}
+
+  /* 이벤트 */
+  #event {width:1200px; height:310px; margin:80px auto;}
+  .event_title {width:1200px; height:50px; display:flex; justify-content:space-between; align-items:start;}
+  .event_title > h1  {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .event_title > h2  {font-size:13px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .event_title > h3  {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .event_title > h3:hover {cursor: pointer; text-decoration:underline;}
+
+  .event_box {width:1200px; height:260px; display:flex; justify-content:space-between;}
+  .event_content {width:280px; height:auto;}
+  .event_content > a > img {width:278px; height:160px; border-radius:16px;}
+  .event_content > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-top:10px; line-height:22px;}
+  .event_content > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:300; margin-top:10px;}
+
+
+  /* 상품정보 */
+  #pro_infor {width:1200px; height:auto; margin:0 auto; display:flex; justify-content:space-between;}
+
+  /* 상품정보 - 왼쪽 */
+  .pro_infor_left {width:815px; height:auto; background-color:#fff;}
+
+  /* 북카드 */
+  .bookkard {width:815px; height:451px;}
+  .bookkard > .bk_title {width:815px; height:54px; display:flex; justify-content:space-between;}
+  .bk_title > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .bk_title > .btn {width:100px; height:54px; display:flex; justify-content:space-between;}
+  .bk_title > .btn > .prev {width:44px; height:44px; border-radius:25px; border:none; background-color:rgba(0, 0, 0, 0.2);}
+  .bk_title > .btn > .prev:hover {cursor: pointer; border:1px solid #555;}
+  .bk_title > .btn > .prev > img {width:100%; height:100%; transform:rotate(180deg);}
+  .bk_title > .btn > .next {width:44px; height:44px; border-radius:25px; border:none; background-color:rgba(0, 0, 0, 0.2);}
+  .bk_title > .btn > .next:hover {cursor: pointer; border:1px solid #555;}
+  .bk_title > .btn > .next > img {width:100%; height:100%;}
+
+  .bk_content {width:815px; height:395px; overflow: hidden;}
+  .bk_content > .bk_ul {width:1653px; height:397px; display:flex; justify-content:space-between;}
+  .bk_content > .bk_ul > li {width:397px; height:397px; float:left; border-radius:20px; overflow:hidden;}
+  .bk_content > .bk_ul > li > a > img {width:100%; height:100%;}
+
+  /* 함께 구매한 책 */
+  .together {width:815px; height:400px; margin-top:70px;}
+  .together > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+
+  .toge_content {width:815px; height:350px; margin-top:20px; border-radius: 20px; display:flex; justify-content:space-evenly; align-items:center; background-color:#f7f7f7;}
+  .toge_box {width:118px; height:280px;}
+  .toge_box > a > img {width:116px; height:auto;}
+  .toge_box > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-top:10px; line-height:20px;}
+  .toge_box > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:300; margin-top:6px; line-height:20px;}
+  .toge_box > h3 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:15px; line-height:20px;}
+  .toge_box > h3 > b {font-weight:600;}
+
+  /* 키워드Pick */
+  #keywordpick {width:815px; height:270px; margin-top:70px;}
+  .kpick_title {width:815px; height:30px;}
+  .kpick_title > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .kpick_nav {width:815px; height:44px; margin-top:15px;}
+  .kpick_nav > ul {display:flex;}
+  .kpick_nav > ul > li {width:auto; height:36px; margin: 0 6px 8px 0; background: #f7f7f7; border: 1px solid #f7f7f7; border-radius: 36px; line-height:33px;}
+  .kpick_nav > ul > li > a {padding:0 15px; color:#595959; font-size:13px; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .kpick_nav > ul > li:first-child {background-color: #595959; border: 1px solid #595959;}
+  .kpick_nav > ul > li:first-child > a {color:#f7f7f7;}
+  .kpick_nav > ul > li:hover {background: #eaeaea; cursor: pointer;}
+
+  .kpick_content {width:815px; height:163px; margin-top:10px;}
+  .kpick_content > .ct_ul {width:750px; height:163px; float:left; display:flex; justify-content:space-between;}
+  .kpick_content > .ct_ul > li {width:106px; height:auto;}
+  .kpick_content > .ct_ul > li > a > img {width:100%; height:auto;}
+
+  .kpick_content > .more {width:45px; height:163px; float:right; display:flex; flex-direction:column; justify-content:center; align-items:center;}
+  .kpick_content > .more > .m {width:25px; height:25px; border:1px solid #ccc; background-color:#fff; border-radius:20px; display:flex; justify-content:center; align-items:center;}
+  .kpick_content > .more > .m:hover {background-color:#f7f7f7; cursor: pointer;}
+  .kpick_content > .more > .m > img {width:9px; height:9px;}
+  .kpick_content > .more > h1 {font-size:12px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:5px;}
+  .kpick_content > .more > h1:hover {cursor: pointer; text-decoration:underline;}
+
+
+  /* infor_img */
+  #infor_img {width:815px; height:5333px; margin-top:70px; border-radius:20px; overflow:hidden;}
+  #infor_img > img {width:100%; height:100%;}
+
+  /* 책소개 */
+  #book_infor {width:815px; height:1109px; margin-top:70px;}
+  .bi_top {width:815px; height:159px; border-bottom:1px solid #eaeaea;}
+  .bi_top > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .bi_top > h2 {font-size:16px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-top:30px;}
+  .bi_top > h3 {font-size:14px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:30px;}
+
+  .bi_middle {width:815px; height:130px; margin-top:30px;}
+  .bi_middle > h2 {font-size:16px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-top:30px;}
+  .bi_middle > h3 {font-size:14px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:20px;}
+
+  .bi_bottom {width:815px; height:759px; margin-top:30px; border-top:1px solid #eaeaea;}
+  .bi_bottom > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:600; margin-top:25px; line-height:23px;}
+  .bi_bottom > h2 {font-size:15px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:20px; line-height:23px;}
+
+  /* 북트레일러 */
+  #book_trailer {width:815px; height:600px; margin-top:70px;}
+  .bt_title {width:815px; height:25px;}
+  .bt_title > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .bt_video {width:815px; height:458px; border-radius:20px; overflow:hidden; margin-top:20px;}
+  .bt_video > iframe {width:100%; height:100%;}
+  #book_trailer > h2 {font-size:12px; color:#888; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:10px; line-height:20px;}
+
+  /* 작가정보 */
+  #author_infor {width:815px; height:auto; margin-top:70px;}
+  #author_infor > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .author_t {width:100%; height:auto; padding: 36px 30px 40px; border-radius: 20px; background-color: #f7f7f7; margin-top:20px;}
+  /*at_1*/
+  .author_t > .at_1 {width:100%; height:30px; display:flex; justify-content:space-between; align-items:center;}
+  .at_1 > h1 {font-size:16px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:600; margin-bottom:18px;}
+  .at_1 > h1 > b {color:#595959; font-weight:400; margin-right:20px;}
+  .at_1 > h1 > img {width:18px; height:18px; margin:17px 0 -2px 7px;}
+  .at_1 > h1 > img:hover {cursor: pointer;}
+  .at_1 > .i {background: #fff; height:30px; padding: 0 9px 1px; border-radius: 4px; border: 1px solid #ccc; display:flex; justify-content:center; align-items:center;}
+  .at_1 > .i:hover {background-color:#f1f1f1; cursor: pointer;}
+  .at_1 > .i > img {width:14px; height:14px; margin-right:4px;}
+  .at_1 > .i > h2 {font-size:12px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+/*at_2*/
+  .author_t > .at_2 {width:100%; height:44px; margin-top:20px; display:flex; align-items:center;}
+  .at_2 > .at_2_box {width:auto; height:40px; border-radius:20px; background-color: #fff; padding: 7px 16px 8px; display:flex; align-items:center; margin-right:5px;}
+  .at_2 > .at_2_box:hover {cursor: pointer;}
+  .at_2 > .at_2_box > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  /*at_3*/
+  .at_3 {width:100%; height:auto; margin-top:15px;}
+  .at_3 > h2 {font-size:15px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; line-height:24px;}
+
+  /*author_b*/
+  .author_b {width:100%; height:auto; padding: 36px 30px 40px; border-radius: 20px; background-color: #f7f7f7; margin-top:20px;}
+  /*at_4*/
+  .author_b > .at_4 {width:100%; height:30px; display:flex; justify-content:space-between; align-items:center;}
+  .at_4 > h1 {font-size:16px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:600; margin-bottom:18px;}
+  .at_4 > h1 > b {color:#595959; font-weight:400; margin-right:20px;}
+  .at_4 > h1 > img {width:18px; height:18px; margin:17px 0 -2px 7px;}
+  .at_4 > h1 > img:hover {cursor: pointer;}
+  .at_4 > .i {background: #fff; height:30px; padding: 0 9px 1px; border-radius: 4px; border: 1px solid #ccc; display:flex; justify-content:center; align-items:center;}
+  .at_4 > .i:hover {background-color:#f1f1f1; cursor: pointer;}
+  .at_4 > .i > img {width:14px; height:14px; margin-right:4px;}
+  .at_4 > .i > h2 {font-size:12px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+/*at_5*/
+  .author_b > .at_5 {width:100%; height:44px; margin-top:20px; display:flex; align-items:center;}
+  .at_5 > .at_5_box {width:auto; height:40px; border-radius:20px; background-color: #fff; padding: 7px 16px 8px; display:flex; align-items:center;}
+  .at_5 > .at_5_box:hover {cursor: pointer;}
+  .at_5 > .at_5_box > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  /*at_6*/
+  .at_6 {width:100%; height:auto; margin-top:15px;}
+  .at_6 > h2 {font-size:15px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; line-height:24px;}
+  /*at_7*/
+  .at_7 {width:550px; height:240px; margin-top:30px; display:flex; justify-content:space-between; }
+  .at_7 > .at_7_box {width:118px; height:240px;}
+  .at_7 > .at_7_box > img {width:118px; height:auto; border:1px solid #e6e6e6;}
+  .at_7 > .at_7_box > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; line-height:22px; margin-top:10px;}
+
+  /* 목차 */
+  .concept {width:815px; height:auto; margin-top:70px; padding-bottom:70px;}
+  .concept > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .concept > .cc_1 {width:100%; height:auto; display:none;}
+  .concept > .cc_1 > h2 {font-size:14px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:00; line-height:23px; margin-top:20px;}
+  .concept > .cc_2 {width:100%; height:auto; position:relative;}
+  .concept > .cc_2 > h2 {font-size:14px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:00; line-height:23px; margin-top:20px;}
+
+  .concept > .cc_btn {width:100px; height:auto; margin-top:40px;}
+  .cc_btn > .cc_btn_1 {width:100px; display:flex; position:absolute;}
+  .cc_btn > .cc_btn_1 > h1 {font-size:14px; color:#5055b1; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .cc_btn > .cc_btn_1 > h1:hover {cursor: pointer; text-decoration:underline;}
+  .cc_btn > .cc_btn_1 > img {width:17px; height:17px; margin-left:5px;}
+  .cc_btn > .cc_btn_2 {width:100px; display:none;}
+  .cc_btn > .cc_btn_2 > h1 {font-size:14px; color:#5055b1; font-family:'Noto Sans KR', sans-serif; font-weight:500; float:left;}
+  .cc_btn > .cc_btn_2 > h1:hover {cursor: pointer; text-decoration:underline;}
+  .cc_btn > .cc_btn_2 > img {width:17px; height:17px; margin-left:5px; transform: rotate(180deg); float: left;}
+
+  /* 추천사 */
+  .chu {width:815px; height:auto; padding-bottom:70px; border-top:1px solid #eaeaea;}
+  .chu > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700; margin-top:70px;}
+  .chu > .ch_1 {width:100%; height:auto; display:none;}
+  .chu > .ch_1 > h1 {font-size:15px; color:#474c98; font-family:'Noto Sans KR', sans-serif; font-weight:600; line-height:23px; margin-top:28px;}
+  .chu > .ch_1 > h2 {font-size:15px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; line-height:23px; margin-top:12px;}
+  .chu > .ch_2 {width:100%; height:auto; position:relative;}
+  .chu > .ch_2 > h1 {font-size:15px; color:#474c98; font-family:'Noto Sans KR', sans-serif; font-weight:600; line-height:23px; margin-top:28px;}
+  .chu > .ch_2 > h2 {font-size:15px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; line-height:23px; margin-top:12px;}
+
+  .chu > .ch_btn {width:100px; height:auto; margin-top:40px;}
+  .ch_btn > .ch_btn_1 {width:100px; display:flex; position:absolute;}
+  .ch_btn > .ch_btn_1 > h1 {font-size:14px; color:#5055b1; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .ch_btn > .ch_btn_1 > h1:hover {cursor: pointer; text-decoration:underline;}
+  .ch_btn > .ch_btn_1 > img {width:17px; height:17px; margin-left:5px;}
+  .ch_btn > .ch_btn_2 {width:100px; display:none;}
+  .ch_btn > .ch_btn_2 > h1 {font-size:14px; color:#5055b1; font-family:'Noto Sans KR', sans-serif; font-weight:500; float:left;}
+  .ch_btn > .ch_btn_2 > h1:hover {cursor: pointer; text-decoration:underline;}
+  .ch_btn > .ch_btn_2 > img {width:17px; height:17px; margin-left:5px; transform: rotate(180deg); float: left;}
+
+  /* 책속으로 */
+  .inbook {width:815px; height:auto; padding-bottom:70px; border-top:1px solid #eaeaea;}
+  .inbook > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700; margin-top:70px;}
+  .inbook > .ib_1 {width:100%; height:auto; display:none;}
+  .inbook > .ib_1 > h1 {font-size:15px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; line-height:23px; margin-top:28px;}
+  .inbook > .ib_2 {width:100%; height:auto; position:relative;}
+  .inbook > .ib_2 > h1 {font-size:15px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; line-height:23px; margin-top:28px;}
+
+  .inbook > .ib_btn {width:100px; height:auto; background-color: wheat; margin-top:40px;}
+  .ib_btn > .ib_btn_1 {width:100px; display:flex; position:absolute; background-color:#fff;}
+  .ib_btn > .ib_btn_1 > h1 {font-size:14px; color:#5055b1; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .ib_btn > .ib_btn_1 > h1:hover {cursor: pointer; text-decoration:underline;}
+  .ib_btn > .ib_btn_1 > img {width:17px; height:17px; margin-left:5px;}
+  .ib_btn > .ib_btn_2 {width:100px; display:none;}
+  .ib_btn > .ib_btn_2 > h1 {font-size:14px; color:#5055b1; font-family:'Noto Sans KR', sans-serif; font-weight:500; float:left;}
+  .ib_btn > .ib_btn_2 > h1:hover {cursor: pointer; text-decoration:underline;}
+  .ib_btn > .ib_btn_2 > img {width:17px; height:17px; margin-left:5px; transform: rotate(180deg); float: left;}
+
+  /* 기본정보 */
+  .basic_info {width:100%; height:auto; border-top:1px solid #eaeaea; border-bottom:1px solid #eaeaea;}
+  .basic_info > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700; margin-top:70px;}
+  .basic_info_content {width:100%; height:330px; border-top:1px solid #000; margin-top:20px; display:flex; align-items:center;}
+  .basic_info_content > .bic_1 {height:300px; display:flex; flex-direction:column; justify-content:space-evenly;}
+  .basic_info_content > .bic_1 > h1 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .basic_info_content > .bic_2 {height:300px; display:flex; flex-direction:column; justify-content:space-evenly; margin-left:70px;}
+  .basic_info_content > .bic_2 > h2 {font-size:14px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  /* 리뷰 */
+  #review {width:815px; height:auto; margin-top:70px;}
+  .review_title {width:100%; height:38px; margin-bottom:16px; display:flex; justify-content:space-between;}
+  .rt_1 {width:300px; height:100%;}
+  .rt_1 > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+
+  .rt_2 {width:350px; height:100%; display:flex; justify-content:space-between; align-items:center;}
+  .rt_2 > h2 {font-size:13px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .rt_2 > .rt_2_btn {margin-left: 20px; width:auto; height:35px; background-color:#5055b1; border-radius:6px; padding: 0 13px 1px; display:flex; justify-content:space-between; align-items:center;}
+  .rt_2 > .rt_2_btn:hover {cursor: pointer; background-color: #2b2e64;}
+  .rt_2_btn > img {width:14px; height:19px; margin-right:5px;}
+  .rt_2_btn > h2 {font-size:13px; color:#fff; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .review_gr {width:100%; height:262px; background-color:#f7f7f7; border: 1px solid #d5d5d5; border-radius: 20px; margin-bottom:30px; padding:35px 49px; display:flex; justify-content:space-between;}
+  .review_gr_left {width:357px; height:191px; border-right: 1px solid #eaeaea;}
+  .review_gr_left > .gr_l_t {width:306px; height:48px; display:flex; flex-direction:column; align-items:center;}
+  .gr_l_t > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-bottom:15px;}
+  .gr_l_t > .klover_b { width:152px; height:20px; display:flex; justify-content:space-between; align-items:center;}
+  .gr_l_t > .klover_b > img {width:18px; height:18px; float:left; margin-right:4px;}
+  .gr_l_t > .klover_b > h2 {font-size:14px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; }
+  .gr_l_t > .klover_b > h2 > b {font-size:20px; color:#3c9a17; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+
+  .review_gr_left > .gr_l_b {width:306px; height:115px; margin-top:28px;}
+  .gr_l_b > .gr_l_b1 {width:306px; height:19px; display:flex; justify-content:space-between; align-items:center;}
+  .gr_l_b1 > .kl1 {width:68px; height:14px; display:flex; justify-content:space-between;}
+  .gr_l_b1 > .kl1 > img {width:14px; height:14px;}
+  .gr_l_b1 > .bar1 {width:195px; height:4px; background-color:rgba(0, 0, 0, 0.06); border-radius: 2px;}
+  .gr_l_b1 > .bar1 > span {width:185px; height:4px; position: absolute; background-color:#4dac27; border-radius: 2px;}
+  .gr_l_b1 > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .gr_l_b > .gr_l_b2 {width:306px; height:19px; margin-top:13px; display:flex; justify-content:space-between; align-items:center;}
+  .gr_l_b2 > .kl1 {width:68px; height:14px; display:flex; justify-content:space-between;}
+  .gr_l_b2 > .kl1 > img {width:14px; height:14px;}
+  .gr_l_b2 > .kl1 > img:last-child {opacity:0.4;}
+  .gr_l_b2 > .bar1 {width:195px; height:4px; background-color:rgba(0, 0, 0, 0.06); border-radius: 2px;}
+  .gr_l_b2 > .bar1 > span {width:9px; height:4px; position: absolute; background-color:#767676; border-radius: 2px;}
+  .gr_l_b2 > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .gr_l_b > .gr_l_b3 {width:306px; height:19px; margin-top:13px; display:flex; justify-content:space-between; align-items:center;}
+  .gr_l_b3 > .kl1 {width:68px; height:14px; display:flex; justify-content:space-between;}
+  .gr_l_b3 > .kl1 > img {width:14px; height:14px;}
+  .gr_l_b3 > .kl1 > img:last-child {opacity:0.4;}
+  .gr_l_b3 > .kl1 > img:nth-child(3) {opacity:0.4;}
+  .gr_l_b3 > .bar1 {width:195px; height:4px; background-color:rgba(0, 0, 0, 0.06); border-radius: 2px;}
+  .gr_l_b3 > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .gr_l_b > .gr_l_b4 {width:306px; height:19px; margin-top:13px; display:flex; justify-content:space-between; align-items:center;}
+  .gr_l_b4 > .kl1 {width:68px; height:14px; display:flex; justify-content:space-between;}
+  .gr_l_b4 > .kl1 > img {width:14px; height:14px;}
+  .gr_l_b4 > .kl1 > img:not(:first-child) {opacity:0.4;}
+  .gr_l_b4 > .bar1 {width:195px; height:4px; background-color:rgba(0, 0, 0, 0.06); border-radius: 2px;}
+  .gr_l_b4 > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .review_gr_right {width:357px; height:191px;}
+  .review_gr_right > .gr_r_t {width:306px; height:48px; float:right; display:flex; flex-direction:column; align-items:center;}
+  .gr_r_t > h1 {font-size:16px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .gr_r_t > h2 {font-size:16px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:7px;}
+  .gr_r_t > h2 > b {color:#474c98; font-family:'Noto Sans KR', sans-serif; font-weight:700; font-size:17px;}
+  .gr_r_t > h2::before {content:""; background-image:url("../img/sub/quotes_icon.png"); background-size: 16px 16px; width:16px; height:16px; display: inline-block; margin-right:7px; margin-bottom:-1px;}
+
+  .review_gr_right > .gr_r_b {width:306px; height:115px; margin-top:28px; float:right; display:flex; justify-content:space-between;}
+  .gr_r_b > .gr_r_b1 {width:54px; height:114px; display:flex; flex-direction:column; justify-content:space-between; align-items:center;}
+  .gr_r_b1 > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .gr_r_b1 > .bar2 {width:6px; height:62px; background-color: #eaeaea; border-radius: 3px; display:flex; align-items:flex-end;}
+  .gr_r_b1 > .bar2 > span {width:6px; height:9px; background-color:#767675; position:absolute; border-radius:3px;}
+  .gr_r_b1 > h2 {font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .gr_r_b > .gr_r_b2 {width:54px; height:114px; display:flex; flex-direction:column; justify-content:space-between; align-items:center;}
+  .gr_r_b2 > h1 {height:19px; border-radius: 10px; padding:2px 7px; font-size:13px; color:#fff; font-family:'Noto Sans KR', sans-serif; font-weight:500; background-color: rgba(80, 85, 177, 0.8);}
+  .gr_r_b2 > img {width: 12px; height: 4px; margin-top:-13px;}
+  .gr_r_b2 > .bar2 {width:6px; height:62px; background-color: #eaeaea; border-radius: 3px; display:flex; align-items:flex-end; margin-top:-8px;}
+  .gr_r_b2 > .bar2 > span {width:6px; height:31px; background-color: rgba(80, 85, 177, 0.8); position:absolute; border-radius:3px;}
+  .gr_r_b2 > h2 {font-size:12px; color:#474c98; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+
+  .gr_r_b > .gr_r_b3 {width:54px; height:114px; display:flex; flex-direction:column; justify-content:space-between; align-items:center;}
+  .gr_r_b3 > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .gr_r_b3 > .bar2 {width:6px; height:62px; background-color: #eaeaea; border-radius: 3px; display:flex; align-items:flex-end;}
+  .gr_r_b3 > .bar2 > span {width:6px; height:3px; background-color:#767675; position:absolute; border-radius:3px;}
+  .gr_r_b3 > h2 {font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .gr_r_b > .gr_r_b4 {width:54px; height:114px; display:flex; flex-direction:column; justify-content:space-between; align-items:center;}
+  .gr_r_b4 > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .gr_r_b4 > .bar2 {width:6px; height:62px; background-color: #eaeaea; border-radius: 3px; display:flex; align-items:flex-end;}
+  .gr_r_b4 > .bar2 > span {width:6px; height:3px; background-color:#767675; position:absolute; border-radius:3px;}
+  .gr_r_b4 > h2 {font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .gr_r_b > .gr_r_b5 {width:54px; height:114px; display:flex; flex-direction:column; justify-content:space-between; align-items:center;}
+  .gr_r_b5 > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .gr_r_b5 > .bar2 {width:6px; height:62px; background-color: #eaeaea; border-radius: 3px; display:flex; align-items:flex-end;}
+  .gr_r_b5 > .bar2 > span {width:6px; height:13px; background-color:#767675; position:absolute; border-radius:3px;}
+  .gr_r_b5 > h2 {font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  /*review_box*/
+  .review_box {width:815px; height:auto; margin-top:30px;}
+  .review_nav {width:815px; height:44px; border-bottom:1px solid #d5d5d5; display:flex; justify-content:space-between; align-items:center;}
+  .review_nav > ul {height:44px; display:flex; align-items:center;}
+  .review_nav > ul > li {font-size:14px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-right:24px;}
+  .review_nav > ul > li:first-child {color:#000; font-weight:600; border-bottom:2px solid #000; height:44px; display:flex; align-items:center; margin-top:2px;}
+  .review_nav > .new_btn {width:120px; height:38px; border: 1px solid #d5d5d5; border-radius: 6px; padding: 0 14px; display:flex; justify-content:space-between; align-items: center;}
+  .new_btn > h1 {font-size:13px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .new_btn > img {width:9px; height:8px;}
+
+  .review_box_content {width:815px; height:auto;}
+  .review_box_content > .rbc1 {width:100%; height:auto; padding:20px 10px; border-bottom: 1px solid #eaeaea;}
+  .rbc1_t {width:794px; height:22px; display:flex; justify-content:space-between;}
+  .rbc1_t_l {width:350px; height:22px; display:flex; align-items:center;}
+  .rbc1_t_l > h1 {background: rgba(23, 23, 237, 0.1); padding: 3px 7px; border-radius: 20px; font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .rbc1_t_l > h2 {font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-left:10px;}
+  .rbc1_t_l > h3 {padding: 3px 7px; border-radius: 20px; font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; border:1px solid #767676; margin-left:10px;}
+
+  .rbc1_t_r {width:160px; height:22px; display:flex; align-items:center; justify-content:space-between;}
+  .rbc1_t_r > img {width:14px; height:14px; margin-right:3px;}
+  .rbc1_t_r > h1 {font-size:5px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-right:6px;}
+  .rbc1_t_r > h2 {font-size:14px; color:#474c98; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+
+  .rbc1_m {width:794px; height:40px; margin-top:30px;}
+  .rbc1_m > h1 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400; line-height:23px;}
+
+  .rbc1_b {width:794px; height:20px; margin-top:12px; display:flex; justify-content:space-between;}
+  .rbc1_b_l {width:150px; height:20px; display:flex; align-items:center;}
+  .rbc1_b_l > h1 {font-size:14px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-right:5px;}
+  .rbc1_b_l > h1:hover {cursor: pointer; text-decoration:underline;}
+  .rbc1_b_l > h2 {font-size:13px; color:#474c98; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .rbc1_b_l > h2:hover {cursor: pointer; text-decoration:underline;}
+  .rbc1_b_l > img {width:20px;
+  height:20px;}
+  .rbc1_b_r {width:110px; height:20px; display:flex; align-content:center; justify-content:space-between;}
+  .rbc1_b_r > h1 {font-size:13px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:-1px;}
+  .rbc1_b_r > h1::before {content:""; background-image:url("../img/sub/like.png"); background-size:20px 20px; display: inline-block; width:20px; height:20px; margin-right:4px; margin-bottom:-5px;}
+  .rbc1_b_r > h2 {font-size:13px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:-1px;}
+  .rbc1_b_r > h2::before {content:""; background-image:url("../img/sub/reply.png"); background-size:20px 20px; display: inline-block; width:20px; height:20px; margin-right:4px; margin-bottom:-5px;}
+
+  .review_bottom {width:815px; height:24px; margin-top:30px;}
+  .review_bottom > .rb_nav {margin:0 auto; width:190px; height:24px; display:flex; justify-content:space-between; align-items:center;}
+  .rb_nav > img {width:20px; height:20px;}
+  .rb_nav > img:first-child {transform: rotate(90deg);}
+  .rb_nav > img:last-child {transform: rotate(270deg);}
+  .rb_nav > h1 {font-size:13px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .rb_nav > h1 > a {width:20px; height:20px; display:block; background-color: #767675; color:#fff; border-radius:15px; text-align:center; line-height:18px;}
+
+  /* 문장수집 */
+  .moon {width:815px; height:auto; margin-top:70px;}
+  .moon > .moon_title {width:815px; height:54px; display:flex; justify-content:space-between; align-items:center;}
+  .moon_title > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .moon_title > .moon_title_r {width:460px; height:38px; display:flex; justify-content:space-between; align-items:center;}
+  .moon_title_r > h2 {font-size:13px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .moon_title_r > .mt_1 {border: 1px solid #ccc; height: 38px; padding: 0 13px 1px; border-radius: 6px; display:flex; justify-content:center; align-items:center; margin-left:10px; background-color:#fff;}
+  .moon_title_r > .mt_1:hover {background-color:#efeeee; cursor: pointer;}
+  .moon_title_r > .mt_1 > h1 {font-size:13px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .moon_title_r > .mt_2 {background-color: #5055b1; height: 38px; padding: 0 13px 1px; border-radius: 6px; display:flex; justify-content:center; align-items:center;}
+  .moon_title_r > .mt_2:hover {background-color:#2b2e64; cursor: pointer;}
+  .moon_title_r > .mt_2 > h1 {font-size:13px; color:#fff; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .moon_title_r > .mt_2 > img {width:14px; height:19px; margin-right:3px;}
+
+  .moon_content {width:815px; height:auto; display:flex; justify-content:space-between; margin-top:10px;}
+  .moon_content > .moon_c1 {width:397px; height:auto; display:flex; flex-direction:column; align-items:center;}
+  .moon_c1 > img {width:397px; height:397px;}
+  .moon_c1 > h1 {font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top: 18px;}
+  .moon_content > .moon_c2 {width:397px; height:auto; display:flex; flex-direction:column; align-items:center;}
+  .moon_c2 > img {width:397px; height:397px;}
+  .moon_c2 > h1 {font-size:12px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top: 18px;}
+
+  .moon_bottom {width:815px; height:24px; margin-top:30px; display:flex; justify-content:center;}
+  .mb_nav {width:112px; height:24px; display:flex; justify-content:space-between; align-items:center;}
+  .mb_nav > h1 {font-size:13px; color:#767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .mb_nav > h1 > a {width:24px; height:24px; display:block; border-radius:20px; background-color:#767676; color:#fff; text-align:center; line-height:23px;}
+  .mb_nav > img {width:20px; height:20px;}
+  .mb_nav > img:first-child {transform: rotate(90deg);}
+  .mb_nav > img:last-child {transform: rotate(270deg);}
+  
+  /* 배너 */
+  .view {width:815px; height:140px; margin-top:70px; border-radius:16px; overflow:hidden;}
+  .view > img {width:100%; height:100%;}
+
+  /* 교환반품품절안내 */
+  #soldout {width:815px; height:auto; margin-top:70px;}
+  .soldout_title {width:815px; height:54px; padding-bottom:16px; border-bottom:1px solid #000; display:flex; justify-content:space-between;}
+  .soldout_title > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700; margin-top:10px;}
+  .soldout_title > .sot_btn {width:205px; height:auto; display:flex; justify-content:space-between;}
+  .sot_btn > .sot_1 {background: #fff; border: 1px solid #ccc; height: 38px; padding: 0 13px 1px; border-radius: 6px; display:flex; justify-content:center; align-items:center;}
+  .sot_btn > .sot_1:hover {background-color:#e9e8e8; cursor: pointer;}
+  .sot_1 > h1 {font-size:13px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+
+  .sot_btn > .sot_2 {background: #5055b1; height: 38px; padding: 0 13px 1px; border-radius: 6px; display:flex; justify-content:center; align-items:center;}
+  .sot_btn > .sot_2:hover {background-color: #2b2e64; cursor: pointer;}
+  .sot_2 > h1 {font-size:13px; color:#fff; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .sot_2 > img {width: 17px; height:15px; margin-right:3px;}
+  
+  .soldout_content {width:815px; height:auto; padding:30px 0; border-bottom:1px solid #eaeaea;}
+  .soldout_content > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:600;}
+  .soldout_content > h2 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400; line-height:23px; margin-top:20px;}
+
+  .soldout_bottom {width:815px; height:67px; padding:24px; border-radius:10px;
+background-color: #f7f7f7; margin-top:50px; margin-bottom:200px;}
+  .soldout_bottom > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  
+
+  /* 상품정보 - 오른쪽 */
+  .pro_infor_right {width:330px; height:auto; background-color:#fff;}
+
+  /* 이분야의 베스트 */
+  .best {width:330px; height:auto;}
+  .best > .best_title {width:330px; height:30px; display:flex; justify-content:space-between; align-items:center;}
+  .best_title > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .best_title > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .best_title > h2:hover {cursor: pointer; text-decoration: underline;}
+  .best_content {width:330px; height:auto; margin-top:20px;}
+  .bc1 {width:330px; height:147px; display: flex; align-items: center; margin-bottom:20px;}
+  .bc1 > img {width:98px; height:auto; border:1px solid #e8e8e8;}
+  .bc1 > .bc1_c {width:auto; height:99px; margin-left:16px; display:flex; flex-direction:column; justify-content:space-between;}
+  .bc1_cc {width:20px; height:18px; background: #4dac27; padding:3px 2px; border-top-left-radius:6px; border-bottom-right-radius:6px; display:flex; align-items:center; justify-content:center;}
+  .bc1_cc > h4 {font-size:12px; color:#fff; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-bottom:2px;}
+  .bc2_cc {width:20px; height:18px; background: #767676; padding:3px 2px; border-top-left-radius:6px; border-bottom-right-radius:6px; display:flex; align-items:center; justify-content:center;}
+  .bc2_cc > h4 {font-size:12px; color:#fff; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-bottom:2px;}
+
+  .bc1_c > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-top:-15px;}
+  .bc1_c > h1:hover {cursor: pointer; text-decoration:underline;}
+  .bc1_c > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:-10px;}
+  .bc1_c > h3 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .bc1_c > h3 > b {font-weight:700;}
+  .bc1_c > h3::before {content:"10%"; font-size:14px; color:#4dac27; font-family:'Noto Sans KR', sans-serif; font-weight:700; margin-right:3px;}
+
+  /* 다른언어책 */
+  .otherlan {width:330px; height:auto; margin-top:60px;}
+  .otherlan > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+
+  .otherlan_content {width:330px; height:auto; margin-top:25px;}
+  .olc1 {width:330px; height:150px; display:flex; align-items:center; margin-bottom:20px;}
+  .olc1 > img {width:98px; height:148; border:1px solid #e8e8e8;}
+  .olc1_c {width:auto; height:75px; margin-left:16px; display:flex; flex-direction:column; justify-content:space-between;}
+  .olc1_c > h1 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .olc1_c > h2 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:600; margin-top:-15px;}
+  .olc1_c > h3 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  .olc1_c > h3 > b {font-weight:700;}
+  .olc1_c > h3::before {content:"10%"; font-size:14px; color:#4dac27; font-family:'Noto Sans KR', sans-serif; font-weight:700; margin-right:3px;}
+
+  /* view_banner2 */
+  .view_banner2 {width:330px; height:179px; margin-top:50px; border-radius:16px; overflow: hidden;}
+  .view_banner2 > img {width:100%; height:100%;}
+
+  /* 이분야의신간 */
+  .thisnew {width:330px; height:auto; margin-top:50px;}
+  .thisnew_title {width:330px; height:30px; display:flex; justify-content:space-between; align-items:center;}
+  .thisnew_title > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .thisnew_title > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .thisnew_title > h2:hover {cursor: pointer; text-decoration:underline;}
+
+  .tn_content {width:330px; height:auto; margin-top:20px;}
+  .tnc1 {width: 330px; height:142px; display:flex; align-items:center; margin-bottom:20px;}
+  .tnc1 > img {width:98px; height:auto; border:1px solid #e8e8e8;}
+  .tnc1 > .tnc1_c {width:auto; height:75px; display:flex; flex-direction:column; justify-content:space-between; margin-left:16px;}
+  .tnc1_c > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:600;}
+  .tnc1_c > h1:hover {cursor: pointer; text-decoration:underline;}
+  .tnc1_c > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400; margin-top:-10px;}
+  .tnc1_c > h3 {font-size:14px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .tnc1_c > h3 > b {font-weight:700;}
+  .tnc1_c > h3::before {content:"10%"; font-size:14px; color:#4dac27; font-family:'Noto Sans KR', sans-serif; font-weight:700; margin-right:3px;}
+
+  /* 추천casting */
+  .casting {width:330px; height:auto; margin-top:100px;}
+  .casting_title {width:330px; height:30px; display:flex; justify-content:space-between; align-items:center;}
+  .casting_title > h1 {font-size:20px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  .casting_title > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+  .casting_title > h2:hover {cursor: pointer; text-decoration:underline;}
+
+  .casting_content {width:330px; height:auto; margin-top:20px;}
+  .casting_content > .ctc1 {width:330px; height:160px; display:flex; align-items:center; margin-bottom:20px;}
+  .ctc1 > img {width:158px; height:158px; border-radius:10px;}
+  .ctc1_c {width:154px; height:70px; margin-left:16px; display:flex; flex-direction:column; justify-content:space-between;}
+  .ctc1_c > h1 {font-size:15px; color:#000; font-family:'Noto Sans KR', sans-serif; font-weight:500; line-height:22px;}
+  .ctc1_c > h1:hover {cursor: pointer; text-decoration:underline;}
+  .ctc1_c > h2 {font-size:13px; color:#595959; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
